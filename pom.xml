@@ -145,7 +145,7 @@
 
     <build>
 
-        <finalName>spring-boot-boilerplate</finalName>
+        <finalName>smarthouse</finalName>
 
         <plugins>
             <plugin>
