@@ -21,10 +21,7 @@ public class House {
     private String address;
 
     @DBRef(lazy = true)
-    private User user;
-
-    @DBRef(lazy = true)
-    private List<Room> rooms;
+    private List<Floor> floors;
 
     @DBRef(lazy = true)
     private User owner;

@@ -12,9 +12,9 @@
     <groupId>design.boilerplate</groupId>
     <artifactId>spring-boot</artifactId>
     <version>1.0.0</version>
-    <name>spring-boot-boilerplate</name>
+    <name>smarthouse</name>
     <description>
-        Spring Boot starter kit. This project includes : Spring Boot(2.3.3), Spring Validation, Spring Security +
+        smarthouse app. This project includes : Spring Boot(2.3.3), Spring Validation, Spring Security +
         JWT Token, Mapstruct, Lombok, Swagger
     </description>
 
@@ -28,12 +28,13 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <jwt.version>0.9.0</jwt.version>
+        <jwt.version>0.9.1</jwt.version>
         <lombok.version>1.18.12</lombok.version>
-        <mapstruct.version>1.3.1.Final</mapstruct.version>
-        <apache-commons.version>3.10</apache-commons.version>
-        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <apache-commons.version>3.12.0</apache-commons.version>
+        <springfox-swagger2.version>3.0.0</springfox-swagger2.version>
         <apache-maven-plugin.version>3.8.1</apache-maven-plugin.version>
+        <mockito.version>3.6.28</mockito.version>
     </properties>
 
     <dependencies>
@@ -95,10 +96,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -108,14 +106,10 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>3.6.28</version>
+            <version>${mockito.version}</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -140,6 +134,38 @@
             <artifactId>jaxb-api</artifactId>
             <version>2.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+        </dependency>
+
 
     </dependencies>
 
