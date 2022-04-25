@@ -14,7 +14,7 @@ public class SecurityConstants {
 	 */
 	public static final long EXPIRATION_TIME = 24 * 60 * 60 * 1000;
 
-	final String SECRET_KEY = "El-kabli";
+	public static final String SECRET_KEY = "El-kabli";
 
 
 	public static final String ISSUER = "www.boilerplate.design";
