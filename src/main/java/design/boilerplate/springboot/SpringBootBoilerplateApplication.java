@@ -28,20 +28,3 @@ public class SpringBootBoilerplateApplication {
         return new BCryptPasswordEncoder();
     }
 }
-/*
-@EnableAspectJAutoProxy
-public class SpringBootBoilerplateApplication {
-
-	public static void main(String[] args) {
-
-		SpringApplication.run(SpringBootBoilerplateApplication.class, args);
-	}
-
-	@Bean
-	public BCryptPasswordEncoder encoder() {
-		return new BCryptPasswordEncoder();
-	}
-
-}
-*/
-

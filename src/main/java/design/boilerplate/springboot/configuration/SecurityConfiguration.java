@@ -31,7 +31,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private final JwtAuthenticationEntryPoint unauthorizedHandler;
 
     private final String[] PUBLIC_ENDPOINTS = {
-            "/register", "/login", "/v2/api-docs", "/configuration/ui", "/swagger-resources/**", "/configuration/security", "/swagger-ui.html", "/webjars/**", "/actuator/**"
+            "/register",
+            "/login",
+            "/v2/api-docs",
+            "/configuration/ui",
+            "/swagger-resources/**",
+            "/configuration/security",
+            "/swagger-ui.html",
+            "/webjars/**",
+            "/actuator/**"
 
     };
 
